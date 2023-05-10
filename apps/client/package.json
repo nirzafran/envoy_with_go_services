@@ -1,0 +1,22 @@
+{
+  "name": "client",
+  "version": "1.0.0",
+  "description": "a learning project for a gRPC web based client",
+  "main": "app.js",
+  "scripts": {
+    "__copy_assets_to_dist": "cp index.html dist/",
+    "__bundle_client": "browserify ./src/app.js > dist/main.js",
+    "build": "mkdir -p dist/ && rm -rf dist/** && npm run __bundle_client && npm run __copy_assets_to_dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "nir moav <nir@zafran.io>",
+  "license": "ISC",
+  "dependencies": {
+    "grpc-web": "^1.4.2"
+  },
+  "devDependencies": {
+    "browserify": "^17.0.0",
+    "google-protobuf": "^3.21.2"
+  }
+}

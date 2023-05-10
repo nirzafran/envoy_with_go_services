@@ -1,8 +1,8 @@
 syntax = "proto3";
 
-package smpl.time.api.v1;
+package generated.timeservice;
 
-option go_package = "github.com/getnirm/grpc-web-example/api/time/v1";
+option go_package = "getnirm/goserver/generated/timeservice";
 
 message GetCurrentTimeRequest {
 }
