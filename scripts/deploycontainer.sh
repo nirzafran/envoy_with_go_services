@@ -1,1 +1,1 @@
-docker run -d --name nirs-enovy-lab -p 9090:10000 nir-envoy-lab
+docker run -d -p 8080:10000 nir-envoy-lab

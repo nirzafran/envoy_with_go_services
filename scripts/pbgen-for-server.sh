@@ -1,5 +1,5 @@
 # RUN FROM ROOT DIR!
-docker run \
+docker run --rm \
     -v `pwd`/apps/server/interface:/api \
     -v `pwd`/apps/server/generated:/goclient \
     jfbrandhorst/grpc-web-generators \

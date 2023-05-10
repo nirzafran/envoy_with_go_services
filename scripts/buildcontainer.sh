@@ -1,2 +1,4 @@
 #!/bin/bash
-docker build -t nir-envoy-lab ../
+sh ./scripts/pbgen.sh
+sh ./scripts/buildclient.sh
+docker build -t nir-envoy-lab ./
